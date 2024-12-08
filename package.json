@@ -1,0 +1,22 @@
+{
+  "name": "esm-node-18",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@arizeai/openinference-instrumentation-openai": "^1.1.2",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.56.0",
+    "@opentelemetry/exporter-trace-otlp-proto": "^0.56.0",
+    "@opentelemetry/instrumentation": "^0.56.0",
+    "@opentelemetry/resources": "^1.29.0",
+    "@opentelemetry/sdk-trace-node": "^1.29.0",
+    "openai": "^4.76.0"
+  }
+}
