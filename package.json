@@ -11,12 +11,15 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@arizeai/openinference-instrumentation-openai": "^1.1.2",
+    "@arizeai/openinference-instrumentation-openai": "^2.0.0",
+    "@arizeai/openinference-semantic-conventions": "^1.0.0",
     "@opentelemetry/exporter-trace-otlp-http": "^0.56.0",
     "@opentelemetry/exporter-trace-otlp-proto": "^0.56.0",
     "@opentelemetry/instrumentation": "^0.56.0",
     "@opentelemetry/resources": "^1.29.0",
+    "@opentelemetry/sdk-trace-base": "^1.29.0",
     "@opentelemetry/sdk-trace-node": "^1.29.0",
+    "@opentelemetry/semantic-conventions": "^1.28.0",
     "openai": "^4.76.0"
   }
 }
