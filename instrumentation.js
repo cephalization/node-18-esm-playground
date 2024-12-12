@@ -4,6 +4,7 @@ import {
   isPatched,
 } from "@arizeai/openinference-instrumentation-openai";
 import { registerInstrumentations } from "@opentelemetry/instrumentation";
+import { DiagConsoleLogger, DiagLogLevel, diag } from "@opentelemetry/api";
 import * as OpenAI from "openai";
 import { Resource } from "@opentelemetry/resources";
 import { SimpleSpanProcessor } from "@opentelemetry/sdk-trace-base";
@@ -12,6 +13,8 @@ import { SEMRESATTRS_PROJECT_NAME } from "@arizeai/openinference-semantic-conven
 import { ATTR_SERVICE_NAME } from "@opentelemetry/semantic-conventions";
 
 export { isPatched };
+
+diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.INFO);
 
 const provider = new NodeTracerProvider({
   resource: new Resource({
